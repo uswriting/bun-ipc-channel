@@ -57,7 +57,7 @@ ipc.notify('log', 'Calculation completed');
 
 ### 4. Child Process  
 ```typescript  
-import { createChildIPC } from './ipc';  
+import { createChildIPC } from './channel';  
 
 const ipc = createChildIPC<MyEvents>();  
 ipc.on('calculate', ({ a, b }) => a + b);  
